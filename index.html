@@ -107,8 +107,8 @@
       //question 2
       //javascript function that accepts the url and the parameter name and returns the value of that parameter
       function getUrlParameterValue(url, parameter) {
-        urlParamsAll = url.substring(url.indexOf("?" + 1));
-        urlParamsArr = urlParamsAll.split("&");
+        var urlParamsAll = url.substring(url.indexOf("?" + 1));
+        var urlParamsArr = urlParamsAll.split("&");
         for (let i = 0; i < urlParamsArr.length; i++) {
           temp = urlParamsArr[i].split("=");
           if (temp[0] == parameter) {
